@@ -34,13 +34,13 @@ export default function Home(): JSX.Element {
       <main className={styles.container}>
         <Header />
 
-        <div>
+        <div className={styles.listPosts}>
           <Link href="/">
             <a>
-              <strong>Como utilizar Hooks</strong>
+              <h1>Como utilizar Hooks</h1>
               <p>Pensando em sincronização em vez de ciclos de vida.</p>
 
-              <div>
+              <div className={styles.author}>
                 <div>
                   <FiCalendar />
                   <time> 15 Mar 2021</time>
@@ -55,10 +55,10 @@ export default function Home(): JSX.Element {
 
           <Link href="/">
             <a>
-              <strong>Como utilizar Hooks</strong>
+              <h1>Como utilizar Hooks</h1>
               <p>Pensando em sincronização em vez de ciclos de vida.</p>
 
-              <div>
+              <div className={styles.author}>
                 <div>
                   <FiCalendar />
                   <time> 15 Mar 2021</time>
@@ -70,6 +70,9 @@ export default function Home(): JSX.Element {
               </div>
             </a>
           </Link>
+          <div className={styles.loadingLink}>
+            <a>Carregar mais posts</a>
+          </div>
         </div>
       </main>
     </>
